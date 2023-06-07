@@ -15,12 +15,11 @@ public class uppercase {
         Scanner sc= new Scanner(System.in);
         ArrayList<String> arr=new ArrayList<String>();
 
-        arr.add("haasas");
-        arr.add("Djsaid");
-        arr.add("jands");
-        arr.add("haasas");
-        arr.add("Djsaid");
-        arr.add("jands");
+        arr.add("aaaaa");
+        arr.add("bbbbbb");
+        arr.add("cccccc");
+        arr.add("dddddd");
+
 
         int num=arr.size();
         System.out.println(arr);
