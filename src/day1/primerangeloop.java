@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class primerangeloop {
-    import java.util.Scanner;
+
 
         public static boolean prime(int number,int c){
             while(c!=number) {
