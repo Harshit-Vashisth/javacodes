@@ -13,12 +13,15 @@ public class uppercase {
     }
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
+        System.out.println("Enter the number of element");
+        int n=sc.nextInt();
+        System.out.println("Enter the strings");
         ArrayList<String> arr=new ArrayList<String>();
+        for(int i=0;i<n;i++){
+            String s=sc.next();
+;            arr.add(s);
+        }
 
-        arr.add("aaaaa");
-        arr.add("bbbbbb");
-        arr.add("cccccc");
-        arr.add("dddddd");
 
 
         int num=arr.size();
