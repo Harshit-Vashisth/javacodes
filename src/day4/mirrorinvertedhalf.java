@@ -6,14 +6,13 @@ public class mirrorinvertedhalf {
     static void print(int i , int n){
         if(i==0)
             return;
-        for (int j = 1; j <= n; j++) // looping columns
+        for(int j = n - i; j > 0; j--)
         {
-            if (j >= i) {
-                System.out.print("* ");
-            }
-            else {
-                System.out.print("  ");
-            }
+            System.out.print("  ");
+        }
+        for(int k = 0; k < i; k++)
+        {
+            System.out.print("* ");
         }
         System.out.println();
         print(  i-1,n);
