@@ -3,7 +3,7 @@ package day4;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class pyramidpattern {
+public class fullpyramid {
     public static void pattern( int i,int c,int num){
         if(i==num)
             return;
