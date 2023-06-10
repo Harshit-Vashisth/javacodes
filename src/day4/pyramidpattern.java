@@ -4,20 +4,19 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class pyramidpattern {
-    public static void pattern( int i,int c,int num){
-        if(i==num)
+    public static void pattern( int i,int k,int n){
+        if(i>n)
             return;
-        for(int s=0;s<num-i;s++){
-            System.out.print("  ");
+
+        for(int j=1;j<=n;j++){
+            if (j >= k)
+                System.out.print("* ");
+            else
+                System.out.print(" ");
         }
-        for(int j=0;j<=i;j++){
-            System.out.print("* ");
-        }
-        for(int j=0;j<i;j++){
-            System.out.print("* ");
-        }
+
         System.out.println();
-        pattern(i+1,c,num);
+        pattern(i+1,k-1,n);
     }
 
     public static void main(String[] args) {
@@ -27,7 +26,7 @@ public class pyramidpattern {
         int num=sc.nextInt();
 
 
-        pattern(0,1,num);
+        pattern(1,num,num);
 
     }
 }
